@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zuru | Software Solutions</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="plugins/aos.css">
+    <link rel="stylesheet" href="plugins/font awesome.css">
+    <link rel="stylesheet" href="plugins/Personal-Plugin.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav id="navbar" class="row">
+
+        <div class="logo">
+            <a href="index.html">zuru</a>
+        </div>
+    </nav>
+
+    <a href="javascript:void(0);" class="menu-icon" onclick="openNav()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </a>
+
+    <div id="overlay" class="sidepanel column-left">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+        <div class="header">zuru</div>
+
+        <div class="sidepanel-main">
+                    
+                <a href="index.html"><div class="line"></div>web development</a>
+                <a href="index.html"><div class="line"></div>ecommerce</a>    
+                <a href="index.html"><div class="line"></div>branding</a>    
+                <a href="index.html"><div class="line"></div>app development</a>
+                <a href="index.html"><div class="line"></div>portfolio</a>
+                <a href="index.html"><div class="line"></div>about</a>
+
+        </div>
+
+        <div class="social row">
+            <a href="index.html" title="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="index.html" title="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="index.html" title="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="index.html" title="dribble"><i class="fab fa-dribbble"></i></a>
+            <a href="index.html" title="behance"><i class="fab fa-behance"></i></a>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container row-wrap">
+            <div class="panel"></div>
+            <div class="panel"></div>
+            <div class="panel"></div>
+            <div class="panel"></div>
+            <div class="panel"></div>
+        </div>
+
+        <div class="hero-content container-centered c-text">
+            <div class="header">zuru</div>
+            <div class="emphasis" id="type1"></div>
+        </div>
+
+        <div class="contact-cta container-centered column-centered">
+            <div class="social row-centered">
+                <a href="index.html" title="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="index.html" title="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="index.html" title="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="index.html" title="dribble"><i class="fab fa-dribbble"></i></a>
+                <a href="index.html" title="behance"><i class="fab fa-behance"></i></a>
+            </div>
+            <a href="#" class="bot c-text">contact me</a>
+        </div>
+        
+
+        <div class="hero-slide container-centered">
+
+            <div class="slideshow">
+                <div class="slide column-centered">
+                    <i class="fas icon fa-laptop-code"></i>
+                    <p class="c-text">
+                        <b>Web Development:</b> <br>
+                        I create beautiful and aesthetic websites
+                    </p>
+                </div>
+                <div class="slide column-centered">
+                    <i class="fas icon fa-brain"></i>
+                    <p class="c-text">
+                        <b>Branding:</b> <br>
+                        allow me to improve your company's brand
+                    </p>
+                </div>
+                <div class="slide column-centered">
+                    <i class="fas icon fa-mobile-alt"></i>
+                    <p class="c-text">
+                        <b>mobile apps development:</b> <br>
+                        Boost your business by investing in a mobile app
+                    </p>
+                </div>
+                <div class="slide column-centered">
+                    <i class="fas icon fa-camera-retro"></i>
+                    <p class="c-text">
+                        <b>photography:</b> <br>
+                        we shoot everything
+                    </p>
+                </div>
+            </div>
+            
+            <div class="hero-cta row-centered c-text">
+                <a href="#" class="bot">explore projects</a>
+                <a href="#" class="bot">start project</a>
+            </div>
+
+        </div>
+        
+    </section>
+
+    <section class="partners">
+        
+        </div>
+    </section>
+
+    <script src="plugins/aos.js"></script>
+    <script src="plugins/font awesome.js"></script>
+    <script # src="plugins/font awesome attribution.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("slide");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 7000);        }
+    </script>
+
+    <script>
+        var i = 0;
+        var txt = 'covering all your software needs';
+        var myVar = setInterval(typewriter, 150);
+        function typewriter() {
+
+            if (i < txt.length) {
+                document.getElementById("type1").innerHTML += txt.charAt(i);
+                i++;
+            }
+        }
+    </script>
+</body>
+</html>
